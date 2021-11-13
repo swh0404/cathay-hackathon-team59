@@ -1,21 +1,28 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-    apiKey: "AIzaSyCl1M-j2VhxnZ6fx-Miyn8m6yQrKy4Cbvg",
-    authDomain: "cathay59.firebaseapp.com",
-    projectId: "cathay59",
-    storageBucket: "cathay59.appspot.com",
-    messagingSenderId: "907834924381",
-    appId: "1:907834924381:web:f9679539892f2250869cb4",
-    measurementId: "G-NMGZZRZBLN"
-};
+const auth = getAuth();
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+//$(document).ready(function() {
+
+//});
+
+$("#submit").click(() => {
+    createUserWithEmailAndPassword(auth, $('#ac').val(), $('#pw').val())
+        .then((userCredential) => {
+            // Signed in 
+            const user = userCredential.user;
+            console.log(user);
+            //login = true;
+            location.replace("../html/profile.html");
+            // ...
+        })
+        .catch((error) => {
+            $("#valid").show();
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorCode);
+            console.log(errorMessage);
+            // ..
+        });
+
+})
