@@ -39,3 +39,56 @@
 .home-img{
     width: 100%;
 }
+
+.home-content-left{
+    background-image: url("../src/plane-left.png");
+    background-size: cover;
+}
+
+.home-content-right{
+    background-image: url("../src/plane-right.png");
+    background-size: cover;
+}
+
+.warning-icon{
+    margin-top: 6px;
+    width: 45px;
+    height: 100%;
+}
+
+.home-content-topic{
+    font-size: 40px;
+}
+
+.home-content-header{
+    margin-left: 10%;
+    margin-top: 30px;
+}
+
+.home-content-left{
+    width: 80%;
+    overflow: scroll;
+}
+
+.text-block{
+    height: 480px;
+}
+
+.chatbot-icon{
+    position: absolute;
+    right: 6%;
+    bottom: 4%;
+    width: 12%;
+    height: auto;
+}
+
+.chatbot-icon:hover{
+    width: 15%;
+    height: auto;
+}
+
+.sign-up-box{
+    border-style: solid;
+    border-color: black;
+    border-width: 0 1px 0 1px;
+}
