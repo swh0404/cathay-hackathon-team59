@@ -1,5 +1,3 @@
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-
 const auth = getAuth();
 
 //$(document).ready(function() {
@@ -7,6 +5,7 @@ const auth = getAuth();
 //});
 
 $("#submit").click(() => {
+    console.log("ho");
     createUserWithEmailAndPassword(auth, $('#ac').val(), $('#pw').val())
         .then((userCredential) => {
             // Signed in 
