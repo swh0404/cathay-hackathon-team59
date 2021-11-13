@@ -7,7 +7,7 @@
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
+var firebaseConfig = {
   apiKey: "AIzaSyBU4n4LhVBYV8LkT2m0IOErP09uvWBa7Rs",
   authDomain: "cathay-hackathon-group-59.firebaseapp.com",
   projectId: "cathay-hackathon-group-59",
@@ -17,6 +17,9 @@ const firebaseConfig = {
   measurementId: "G-66V1Y6NBK0",
 };
 
-// Initialize Firebase
-const app = firebase.initializeApp(firebaseConfig);
-//const analytics = getAnalytics(app);
+$(document).ready(function () {
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  //const analytics = getAnalytics(app);
+  console.log("hjj");
+});
