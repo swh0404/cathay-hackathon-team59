@@ -14,7 +14,7 @@ $("#submit").click(() => {
       const user = userCredential.user;
       console.log(user);
       //login = true;
-      location.replace("../html/profile.html");
+      location.replace("../html/booking.html");
       // ...
     })
     .catch((error) => {
