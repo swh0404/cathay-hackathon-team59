@@ -4454,7 +4454,7 @@
         <ellipse id="Ellipse_2" rx="54" ry="54" cx="54" cy="54"></ellipse>
       </svg>
       <div id="User_Name_User_ID">
-        <span>User Name:<br />User ID:</span>
+        <span>User Name: <span id="name" ></span> <br /><span>User ID: <span id="id" ></span> </span>
       </div>
       <svg class="Icon_awesome-history" viewBox="0.563 0.563 27.146 27.146">
         <path
@@ -4535,8 +4535,15 @@
         ></path>
       </svg>
     </div>
-    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase-app.js" />
-    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase-auth.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="/__/firebase/9.4.1/firebase-app-compat.js"></script>
+    <script
+      defer
+      src="/__/firebase/9.4.1/firebase-firestore-compat.js"
+    ></script>
+    <script src="../js/firebase_config.js"></script>
+    <script defer src="/__/firebase/9.4.1/firebase-auth-compat.js"></script>
     <script src="../js/profile.js"></script>
   </body>
 </html>

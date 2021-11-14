@@ -1,8 +1,5 @@
 $(document).ready(function () {
   // Initialize Firebase
-  if (firebase.apps.length === 0) {
-    firebase.initializeApp({});
-  }
   const auth = firebase.auth;
   console.log(auth);
 });
