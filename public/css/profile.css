@@ -153,3 +153,21 @@ body {
 .accept-file{
     font-size: small;
 }
+
+.plane-background{
+    background-image: url(../src/p.jpg);
+    border-style: none;
+    height: 20%;
+    width: 100%;
+    display: block;
+    background-size: 100%;
+    background-position: 26% 21%;
+    opacity: 0.6;
+}
+
+.flight-ref-header{
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    width: 100%;
+}
