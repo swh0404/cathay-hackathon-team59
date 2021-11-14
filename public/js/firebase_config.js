@@ -19,7 +19,11 @@ var firebaseConfig = {
 
 $(document).ready(function () {
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+  if (firebase.apps.length === 0) {
+    app = firebase.initializeApp(firebaseConfig);
+  } else {
+    app = firebase.app();
+  }
   //const analytics = getAnalytics(app);
-  console.log("hjj");
+  console.log(app);
 });
