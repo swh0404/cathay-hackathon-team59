@@ -7,9 +7,15 @@ $(document).ready(function () {
     "Booking Record",
     "Notifications",
     "Submission of Documents",
-    "Settings",
+    "Questions ? ",
   ];
-  var a_list = ["#", "./booking.html", "./Notifi.html", "./submiss.html", "#"];
+  var a_list = [
+    "#",
+    "./booking.html",
+    "./Notifi.html",
+    "./submiss.html",
+    "./setting.html",
+  ];
 
   list_item.forEach((item, index) => {
     $("#space").append(
