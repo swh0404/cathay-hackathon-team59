@@ -103,3 +103,53 @@ body {
     margin-top: 20px;
     font-size: 18px;
 }
+
+#flightNumber{
+    background-color: #00645A;
+    opacity: 0.8;
+    color: white;
+    border-radius: 10px;
+}
+
+.cathay-background{
+    background-color: #00645A;
+    opacity: 0.8;
+    color: white;
+    border-radius: 4px;
+}
+
+.block{
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+.content-block{
+    height: 100px;
+}
+
+.file-name{
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    border-radius: 10px;
+    color: lightgray;
+    width: 200px;
+}
+
+.upload-btn-grp{
+    display: flex;
+}
+
+.upload-btn{
+    height: 50px;
+}
+
+.submit-content{
+    width:65%
+}
+
+.accept-file{
+    font-size: small;
+}

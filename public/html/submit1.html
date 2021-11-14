@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+    <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/profile.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="row">
+      <div class="a colu col-3 profile-bar">
+        <div class="content a1">
+          <div class="img">
+            <img src="../src/big.png" />
+          </div>
+          <div class="t">
+            <span id="name">Username: </span><br />
+            <span id="id"> User ID:</span>
+          </div>
+        </div>
+        <div class="content a2">
+          <span id="space"></span>
+        </div>
+      </div>
+      <div class="b colu col-9 ml-5 submit-content">
+        <select name="flightNumber" id="flightNumber" class="p-3">
+          <option value="" >Flight reference no.</option>
+          <option value="saab">123</option>
+          <option value="mercedes">456</option>
+          <option value="audi">789</option>
+        </select>
+        <div class="block mt-5">
+          <div class="cathay-background p-1">
+            Flight info
+          </div>
+          <div class="content-block"></div>
+        </div>
+        <div class="block mt-5">
+          <div class="cathay-background p-1">
+            Document Upload
+          </div>
+          <div class="content-block"></div>
+        </div>
+        <!-- <div class="upload-btn-grp mt-5">
+          <div class="file-name p-1 mr-3">File Name</div>
+          <button class="cathay-background upload-btn">Upload</button>
+        </div> -->
+        <div>
+          <!-- <label for="formFileLg" class="form-label">Large file input example</label> -->
+          <input class="form-control form-control-lg cathay-background mt-5" id="formFileLg" type="file">
+        </div>
+        <div class="mt-3 accept-file">
+          <p>Accepted file types:<br/>PDF<br/>Word<br/>JGP Image</br></p>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="/__/firebase/9.4.1/firebase-app-compat.js"></script>
+    <script src="../js/firebase_config.js"></script>
+    <script
+      defer
+      src="/__/firebase/9.4.1/firebase-firestore-compat.js"
+    ></script>
+    <script defer src="/__/firebase/9.4.1/firebase-auth-compat.js"></script>
+    <script src="../js/profile.js"></script>
+  </body>
+</html>
